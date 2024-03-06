@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'The Sans';
+    src: url(./assets/font/thesans/TheSansPlain.ttf) format('truetype');
+}
+.chatbox-hidden {
+    display: none;
+}
+.chatbox-show {
+    display: block;
+    position: absolute;
+    z-index: 2147483647;
+}
+.chatbox-webframe {
+    border: none;
+    display: block;
+    height: 100% !important;
+    width: 390px;
+    position: fixed;
+    top: 0px;
+    left: auto;
+    bottom: 0px;
+    right: 0px;
+    visibility: visible;
+    z-index: 2147483647;
+    max-height: 100vh;
+    max-width: 100vw;
+    transition: none 0s ease 0s;
+    background: none transparent;
+    opacity: 1;
+    box-shadow: 5px 5px 5px 10px #d8d7d7;
+}
+.chatbox-closeBtn {
+    width: 40px;
+    color: #636363;
+    background: transparent;
+    height: 40px;
+    z-index: 1000000000000000000;
+    position: fixed;
+    top: 1px;
+    /* top: 12px; */
+    right: 12px;
+    cursor: pointer !important;
+    border: none;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.chatbox-closeBtn:active {
+    transform: translateY(2px); 
+}
+
+.chatbox-close-pic {
+    height: 17px;
+    width: 18px;
+}
+.chatbot-minIcon-style {
+    position: fixed;
+    border: none;
+    right: 40px;
+    bottom: 20px;
+    cursor: pointer !important;
+    /* box-shadow: 5px 5px 10px #888888; */
+    width: 150px;
+    height: 150px;
+    border: radius 50%;
+}
+
+/* .icon-round {
+    border-radius:50%;
+    background:white;
+} */
+
+@media only screen and (max-device-width : 540px){
+    .chatbox-webframe {
+        width: 100% !important;
+        top: 0;
+    }
+}
+
+.center{
+    text-align: center;
+    margin-top:5em;
+}
